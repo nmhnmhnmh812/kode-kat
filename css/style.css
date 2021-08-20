@@ -1,0 +1,113 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+1. từ ngoài vào trong
+2. từ trên xuống dưới
+3. từ tổng quan dến chi tiết
+*/
+/* 1. vị trí
+   2.kích thước
+   3.màu sắc
+   4,kiểu dáng(kiểu chữ, hình tròn,....) */
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    font-size: 15px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: black;
+    background-color: gray;
+}
+
+#nav li .subnav {
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .search-icon {
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 10px;
+    margin-left: 761px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#slider {
+    width: 100vw;
+    height: 1000px;
+    background-image:linear-gradient(0,rgba(100,100,0,0.5), rgba(0,0,100,0.5)), url(https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/238712896_828123857906277_8559816775918262627_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Qoi07I0RDuoAX_qnvxR&_nc_ht=scontent.fhan2-4.fna&oh=bcad926933b66ab1546b3ffdf511e5ab&oe=6143ACED);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(243, 242, 242);
+
+}
+
+#conten {
+
+}
+
+#footer {
+
+}
